@@ -7,14 +7,12 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>
-            Proyecto
-        </title>
+        <title></title>
     </head>
     <body>
         <h1>
             <?php
-            echo 'Hola mundo';
+                echo 'Hola mundo';
             ?>
         </h1>
     </body>
