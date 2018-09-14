@@ -46,7 +46,24 @@ and open the template in the editor.
                 echo $LenguajeDos[0] . "<br>";
                 echo $LenguajeDos[1] . "<br>";
                 echo $LenguajeDos[2] . "<br>";
+                // Otra forma de arreglos
+                $LenguajeTres = array("PHP","Javascript","html");
+                echo $LenguajeTres[0] . "<br>";
+                echo $LenguajeTres[1] . "<br>";
+                echo $LenguajeTres[2] . "<br>";
+                // Arreglo Asociativo
+                $LenguajeCuatro = array('PHP' => "PHP",'Javascript' => "Javascript",'html' => "html");
+                echo $LenguajeCuatro['PHP'] . "<br>";
+                echo $LenguajeCuatro['Javascript'] . "<br>";
+                echo $LenguajeCuatro['html'] . "<br>";
             ?>
         </h1>
+        <pre>
+            <?php
+                print_r($LenguajeTres);
+                var_dump($LenguajeTres);
+                
+            ?>     
+        </pre>
     </body>
 </html>
