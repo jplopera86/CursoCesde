@@ -82,11 +82,20 @@ and open the template in the editor.
         $usuarios = ["juan", "felipe", "alejandro"];
         usuario($usuarios, 12345);
         echo '<br>';
-        function suma($num1, num2){
+        function suma($num1, $num2){
             return $num1 + $num2;
         }
         $result = suma(2, 4);
         echo "Suma: " . $result;
+        echo '<br>';
+        //acceder a variables globales desde función
+        $agenda = array();
+        function agendar ($nombre){
+            global $agenda;
+            $agenda[] = $nombre;
+        }
+        agendar('Felipe');
+        print_r($agenda);
         ?>
     </body>
 </html>
