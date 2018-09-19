@@ -65,5 +65,28 @@ and open the template in the editor.
                 
             ?>     
         </pre>
+        <?php
+        function Saludar(){
+                echo "Hola a todos";
+        }
+        saludar();
+        //Funcion con parámetros
+        function usuario ($nombres, $tel){
+                foreach($nombres as $nombre){
+                        echo "Nombre: " . $nombre . '<br>';
+                }
+                echo 'Telefono: ' . $tel . '<br>';
+        }
+
+        echo "<br>";
+        $usuarios = ["juan", "felipe", "alejandro"];
+        usuario($usuarios, 12345);
+        echo '<br>';
+        function suma($num1, num2){
+            return $num1 + $num2;
+        }
+        $result = suma(2, 4);
+        echo "Suma: " . $result;
+        ?>
     </body>
 </html>
